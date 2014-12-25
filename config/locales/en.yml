@@ -1,0 +1,12 @@
+en:
+  shoppe:
+    settings:
+      easypost: EasyPost
+      labels:
+        easypost_api_key: Live Secret API Key
+        easypost_shipping_options: Offered Shipping Options
+        handling_cost: Packaging and Handling Cost
+
+      help:
+        easypost_api_key: This is the Live Secret API key from https://www.easypost.com/account/keys.
+        easypost_shipping_options: This is a comma separated list of shipping options you'd like to be available to your customers. Use the service levels listed at https://www.easypost.com/service-levels-and-parcels.
