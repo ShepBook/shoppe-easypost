@@ -1,22 +1,21 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "easypost/version"
+require "shoppe/easypost/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "easypost"
-  s.version     = Easypost::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Easypost."
-  s.description = "TODO: Description of Easypost."
+  s.name        = "shoppe-easypost"
+  s.version     = Shoppe::Easypost::VERSION
+  s.authors     = ["Jared Koumentis"]
+  s.email       = ["jared@apogeezenith.com"]
+  s.homepage    = "https://github.com/ShepBook/shoppe-easypost"
+  s.summary     = "EasyPost integration for Shoppe backend."
+  s.description = "EasyPost integration for Shoppe backend."
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.0.1"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "shoppe", "> 0.0.9", "< 2"
+  s.add_dependency "easypost", "~> 2.1.0"
 end
