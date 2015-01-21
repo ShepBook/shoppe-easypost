@@ -27,13 +27,19 @@ module Shoppe
         Shoppe.settings.easypost_api_key
       end
 
-      def create_shipment(to_address, from_address, parcel)
+      def create_shipment(to_address, parcel)
         EasyPost.api_key = self.api_key
 
         EasyPost::Shipment.create(
           {
             to_address: to_address,
-            from_address: {company: Shoppe.settings.store_name, street1: Shoppe.settings.from_street_1, street2: Shoppe.settings.from_street_2, city: Shoppe.settings.from_city, state: Shoppe.settings.from_state, zip: Shoppe.settings.from_zipcode, phone: Shoppe.settings.from_phone},
+            from_address: {company: Shoppe.settings.store_name,
+                           street1: Shoppe.settings.from_street_1,
+                           street2: Shoppe.settings.from_street_2,
+                           city: Shoppe.settings.from_city,
+                           state: Shoppe.settings.from_state,
+                           zip: Shoppe.settings.from_zipcode,
+                           phone: Shoppe.settings.from_phone},
             parcel: parcel
           }
         )
