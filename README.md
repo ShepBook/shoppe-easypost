@@ -10,7 +10,8 @@ It provides option fields within the standard Settings tab of Shoppe.
 
 ![Screenshot of settings with EasyPost options.](/../screenshots/screenshots/menu.png?raw=true "Screenshot showing EasyPost settings in Shoppe.")
 
-** Given the example in the above screenshot, here's the methods made available. **
+**Given the example in the above screenshot, here's the methods made available.**
+
 These all return a string, as that's how the Shoppe settings hash system works.
 
 ```
