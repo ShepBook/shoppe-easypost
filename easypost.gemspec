@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "shoppe", "> 0.0.9", "< 2"
+  s.add_dependency "shoppe", ">= 1.0.3", "< 2"
   s.add_dependency "easypost", "~> 2.1", ">= 2.1.0"
 end
