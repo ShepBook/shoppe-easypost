@@ -1,4 +1,4 @@
-# Easypost
+# shoppe-easypost
 
 ## How to use this.
 
