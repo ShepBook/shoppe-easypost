@@ -90,10 +90,10 @@ You can then use that ```shipment``` object to get rates and such, as in the Eas
 
 (Seriously, the EasyPost docs are awesome. [Read up here.](https://www.easypost.com/getting-started?lang=ruby))
 
-**I hope you find this gem to be useful. It is currently following Shoppe's convention in that in provides access to data, but does not dictate how you utilize this data on the frontend of your store.**
+**I hope you find this gem to be useful. It is currently following Shoppe's convention in that it provides access to data, but does not dictate how you utilize this data on the frontend of your store.**
 
-I'm considering options to make this a bit more opinionated, with options to override the default shipping system in Shoppe. If you have any suggestion, please drop me a line.
+I'm considering options to make this a bit more opinionated, with options to override the default shipping system in Shoppe. If you have any suggestions, please drop me a line.
 
-Currently, I'd suggest making a generic Shipping item in Shoppe, then use the data you get back from EasyPost to override things like the price of the shipping object in Shoppe. You should be able to inject this into the checkout workflow before they get to payment, so you can show an accurate price. I've done this for a client project, however, I'm not permitted to divulge that code at present.
+Currently, I'd suggest making a generic Shipping item in Shoppe, then use the data you get back from EasyPost to override things like the price of the shipping object in the Shoppe shopping cart. You should be able to inject this into the checkout workflow before they get to payment, so you can show an accurate price. I've done this for a client project, however, I'm not permitted to divulge that code at present.
 
-If you have questions specific to your project, how to implement it in your project, and you'd like me to take a look and make some suggestions, feel free to drop me a line at jared@apogeezenith.com or ping me on twitter [@shepbook](https://www.twitter.com/shepbook). I've worked with Shoppe and EasyPost pretty extensively over the last year and would be happy to help.
+If you have questions specific to your project or how to implement it in your project, and you'd like me to take a look and make some suggestions, feel free to drop me a line at jared@apogeezenith.com or ping me on twitter [@shepbook](https://www.twitter.com/shepbook). I've worked with Shoppe and EasyPost pretty extensively over the last year and would be happy to help.
