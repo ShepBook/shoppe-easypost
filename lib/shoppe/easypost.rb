@@ -45,36 +45,36 @@ module Shoppe
         )
       end
 
-      def allowed_shipping_options
-        option_codes = []
-        Shoppe::DeliveryService.all.each do |ds|
-          option_codes << ds.code
-        end
+      # def allowed_shipping_options
+      #   option_codes = []
+      #   Shoppe::DeliveryService.all.each do |ds|
+      #     option_codes << ds.code
+      #   end
 
-        option_codes
-      end
+      #   option_codes
+      # end
 
-      def available_options_and_rates(shipment)
-        available_rates = []
-        shipment.rates.each do |rate|
-          if self.allowed_shipping_options.include? rate.service
-            available_rates << rate
-          end
-        end
+      # def available_options_and_rates(shipment)
+      #   available_rates = []
+      #   shipment.rates.each do |rate|
+      #     if self.allowed_shipping_options.include? rate.service
+      #       available_rates << rate
+      #     end
+      #   end
 
-        available_rates
-      end
+      #   available_rates
+      # end
 
-      def shipping_and_handling_costs(rates)
-        rates.each do |rate|
-          puts rate.rate.to_f + Shoppe.settings.handling_cost.to_f
-        end
-      end
+      # def shipping_and_handling_costs(rates)
+      #   rates.each do |rate|
+      #     puts rate.rate.to_f + Shoppe.settings.handling_cost.to_f
+      #   end
+      # end
 
-      def easypost_delivery_service_prices(shipment)
-        if delivery_required?
-        end
-      end
+      # def easypost_delivery_service_prices(shipment)
+      #   if delivery_required?
+      #   end
+      # end
 
       def setup
         # Setup configuration with API key. Shipping options separated by commas.
