@@ -10,6 +10,31 @@ It provides option fields within the standard Settings tab of Shoppe.
 
 ![Screenshot of settings with EasyPost options.](/../screenshots/screenshots/menu.png?raw=true "Screenshot showing EasyPost settings in Shoppe.")
 
-## Provides access to the following:
+** Given the example in the above screenshot, here's the methods made available. **
+These all return a string, as that's how the Shoppe settings hash system works.
 
-**Shoppe.settings.easypost_api_key** : Provides access to the Live Secret API Key entered into the Shoppe EasyPost Settings.
+```
+irb > Shoppe.settings.easypost_api_key
+=> "asdfasdfasdfasdfasdfasdfasdfasdfasdf"
+
+irb > Shoppe.settings.handling_cost
+=> "2.99"
+
+irb > Shoppe.settings.from_street_1
+=> "123 Average Place"
+
+irb > Shoppe.settings.from_street_2
+=> "Unit 42"
+
+irb > Shoppe.settings.from_city
+=> "Ocala"
+
+irb > Shoppe.settings.from_state
+=> "FL"
+
+irb > Shoppe.settings.from_zipcode
+=> "34471"
+
+irb > Shoppe.settings.from_phone
+=> "352-123-4567"
+```
