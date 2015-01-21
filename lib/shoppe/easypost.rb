@@ -9,17 +9,17 @@ module Shoppe
   module Easypost
 
     # Add easypost shipping tab to shoppe
-    Shoppe::NavigationManager.build(:admin_primary) do
-      add_item :orders
-      add_item :products
-      add_item :product_categories
-      add_item :delivery_services
-      add_item :tax_rates
-      add_item :users
-      add_item :countries
-      add_item :settings
-      add_item :easypost_shipping
-    end
+    # Shoppe::NavigationManager.build(:admin_primary) do
+    #   add_item :orders
+    #   add_item :products
+    #   add_item :product_categories
+    #   add_item :delivery_services
+    #   add_item :tax_rates
+    #   add_item :users
+    #   add_item :countries
+    #   add_item :settings
+    #   add_item :easypost
+    # end
 
     class << self
 

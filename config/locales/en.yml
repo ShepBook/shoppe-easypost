@@ -2,7 +2,7 @@ en:
   shoppe:
     navigation:
       admin_primary:
-        easypost_shipping: EasyPost Options
+        easypost: EasyPost Options
     settings:
       easypost: EasyPost
       labels:
