@@ -1,5 +1,6 @@
 # shoppe-easypost
 
+[![Code Climate](https://codeclimate.com/github/ShepBook/shoppe-easypost/badges/gpa.svg)](https://codeclimate.com/github/ShepBook/shoppe-easypost)
 [![Gem Version](https://badge.fury.io/rb/shoppe-easypost.svg)](http://badge.fury.io/rb/shoppe-easypost)
 
 ## How to use this.
