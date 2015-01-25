@@ -1,5 +1,7 @@
 # shoppe-easypost
 
+[![Gem Version](https://badge.fury.io/rb/shoppe-easypost.svg)](http://badge.fury.io/rb/shoppe-easypost)
+
 ## How to use this.
 
 This Shoppe module makes it easy for a customer to have and use their own EasyPost API key and give the developer a sane way to access it in production.
