@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/ShepBook/shoppe-easypost"
   s.summary     = "EasyPost integration for Shoppe backend."
   s.description = "EasyPost integration for the Shoppe e-commerce engine."
-  s.license     = "AGPL-3.0"
+  s.license     = "ODPL-1.0"
 
   s.files = Dir["{app,config,db,lib}/**/*", "LICENSE", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
